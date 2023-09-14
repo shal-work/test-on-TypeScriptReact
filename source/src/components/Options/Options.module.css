@@ -1,0 +1,15 @@
+.answers {
+    padding: 2%;
+    font-size: 1.1em;
+}
+
+ul.answers li {
+    list-style-type: none;
+}
+
+ul.answers li input, ul.answers li label  {
+    cursor: pointer;
+}
+.answer {
+    margin-left: 1%;
+}

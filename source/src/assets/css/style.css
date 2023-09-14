@@ -1,0 +1,54 @@
+@import './general/gi.css';
+@import './helpers/classes.css';
+
+*{
+    /* color: $dark;
+    color: $black; */
+}
+
+
+.content {
+    width: 1170px;
+    margin: 0 auto;
+    position: relative;
+    vertical-align: baseline;
+}
+
+.text-center {
+    text-align: center;
+}
+
+img {
+    text-align: center;
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+
+.modal {
+    margin: 0 auto;
+    width: 100%;
+    display: none;
+    cursor: pointer;
+}
+
+img {
+    text-align: center;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.icon {
+    background-image: url(../img/ru.png);
+    background-image: url(../img/geometka.png); 
+    background-repeat: no-repeat; /* Отменяем повторение фона */
+    background-size: 14px;
+    padding-left: 14px;  
+}
+
+.fadeOut {
+    opacity: 0; 
+}
+
+.fadeIn {
+    opacity: 1; 
+}

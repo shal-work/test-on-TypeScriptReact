@@ -1,0 +1,30 @@
+.mainQuestion {
+    padding: 2% 2% 0 2%;
+}
+.mainQuestion__text {
+    margin-top: 1%;
+}
+
+.circle {
+    display: flex;
+    gap: 1%;
+}
+.circle__target {
+    border-radius:50%;
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border:1px solid black;
+}
+
+.true  {
+    background-color: #00B28E;
+}
+.false  {
+    background-color: red;
+}
+
+
+.mainQuestion__quantity {
+    margin-bottom: 1%;
+}

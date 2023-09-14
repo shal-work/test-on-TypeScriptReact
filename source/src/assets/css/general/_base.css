@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+br {
+    margin-top: 5px;
+}
+
+
+p {
+    margin-bottom: 20px;
+}
+
+
+.content {
+    width: 1170px;
+    margin: 0 auto;
+    position: relative;
+    vertical-align: baseline;
+}
+
+.content-text {
+    width: 1170px;
+    margin: 0 auto;
+    position: relative;
+    vertical-align: baseline;
+}
+
+
+

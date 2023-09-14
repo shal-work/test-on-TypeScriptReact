@@ -1,0 +1,34 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    font-size: 1.2em;
+}
+.title {
+    margin: 0 2% 2%;
+}
+.mainIntro {
+    display: flex;
+    justify-content: space-between;
+    flex: 30%;
+    margin-top: 2%;
+    padding: 1% 2%;
+}
+.mainIntro__logo {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainIntro__logo > .logo {
+    max-width: 128px;
+    width: auto;
+    height: auto;
+}
+.mainIntro__text {
+    flex-grow: 2.5;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1% 2%;
+}

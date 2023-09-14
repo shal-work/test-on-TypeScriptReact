@@ -1,0 +1,19 @@
+.nextQuestion {
+    border: none;
+    background: #00B28E;
+    display: block;
+    padding: 8px 16px;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.1em;
+    margin: 20px auto;
+    width: 200px;
+    border-radius: 6px;
+}
+
+.nextQuestionDisabled {
+    opacity: 0.5;
+}
