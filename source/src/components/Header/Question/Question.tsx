@@ -6,11 +6,13 @@ import TextQueastion from './TextQueastion';
 import { CircleElementType, getGo, getQuantity } from '../../../redus/store';
 
 type PropsType = {
-    index: number,
-    circleElement: Array<CircleElementType>,
-    text: string,
-    getQuantity: getQuantity,
+    index: number
+    circleElement: Array<CircleElementType>
+    text: string
+    getQuantity: getQuantity
     getGo: getGo
+    countTrue: number
+    countFalse: number
 }
 
 const Question: React.FC<PropsType> = (props) => {
@@ -18,7 +20,11 @@ const Question: React.FC<PropsType> = (props) => {
     return (
         <div className={s.mainQuestion}>
             <NumberQueastion index={props.index} getQuantity={props.getQuantity}/>
-            <Circle circleElement={props.circleElement}/>
+            <Circle 
+                circleElement={props.circleElement} 
+                countTrue = {props.countTrue}
+                countFalse = {props.countFalse}
+            />
             {props.getGo()
                 ? <TextQueastion text={props.text} index={props.index}/>
                 : <></>

@@ -17,3 +17,9 @@
 .nextQuestionDisabled {
     opacity: 0.5;
 }
+@media  (max-height: 495px) {
+    .nextQuestion {
+        margin: 2.5vh auto;
+    }
+    
+}

@@ -25,7 +25,10 @@ const Header: React.FC<PropsType> = (props) => {
                 text={props.state.questions.issue[index].text} 
                 index={props.state.count} 
                 getGo={props.getGo} 
-                getQuantity={props.getQuantity}/>
+                getQuantity={props.getQuantity}
+                countTrue = {props.state.countTrue}
+                countFalse = {props.state.countFalse}
+            />
         </div>
     )
 }

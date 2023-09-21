@@ -18,7 +18,7 @@ type Props = {
 const App: React.FC<Props>  = (props) => {
 
     return (
-        <div className="app-wrapper">
+        <div className="appWrapper">
             <Header 
                 state={props.state} 
                 getGo={props.getGo} 

@@ -20,6 +20,8 @@ export type StateType = {
     questions: QuestionsType
     circleElement: Array<CircleElementType>
     count: number
+    countTrue: number
+    countFalse: number
 }
 
 export type AnswerType = {
@@ -257,7 +259,9 @@ let store: StoreType = {
             ]
         },
         circleElement: [],
-        count: 1
+        count: 1,
+        countTrue: 0,
+        countFalse: 0
     },
     getState() {
         return this._state;
@@ -296,6 +300,7 @@ let store: StoreType = {
         if (this._state.questions.issue[this._varAnswer.id - 1].var_issuse[0] === this._varAnswer.text) {
             this._state.circleElement = this._state.circleElement.map(q => {
                 if (q.id === this._varAnswer.id) {
+                    this._state.countTrue++;
                     return {...q, correctAnswer: true, viewAnswer: true }
                 }
                 return q;
@@ -303,6 +308,7 @@ let store: StoreType = {
         } else {
             this._state.circleElement = this._state.circleElement.map(q => {
                 if (q.id === this._varAnswer.id) {
+                    this._state.countFalse++;
                     return {...q, correctAnswer: false, viewAnswer: true }
                 }
                 return q;
