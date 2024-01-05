@@ -7,7 +7,9 @@
 .title {
     margin: 0 2% 2%;
 }
-
+.mainIntro__description {
+    margin-top: 1%;
+}
 @media (max-width: 800px) {
 	.title {
 		font-size: calc(var(--index) * 1.2 );
@@ -18,7 +20,6 @@
 		font-size: calc(var(--index) * 1.2 );
 	}
 }
-
 .mainIntro {
     display: flex;
     justify-content: space-between;
@@ -65,6 +66,7 @@
     justify-content: center;
     flex-direction: column;
     padding: 1% 2%;
+    /* font-family: 'Courier New', Courier, monospace; */
 }
 @media  (max-width: 800px) {
     .mainIntro__text {
@@ -79,8 +81,11 @@
 }
 @media  (max-width: 400px) {
     .mainIntro__text {
-		font-size: 12px;
+		font-size: 13px;
 	}
+    .mainIntro {
+        margin-top: 0px;
+    }
 }
 @media (max-width: 400px) and (min-aspect-ratio: 300/128) {
     .mainIntro__text {

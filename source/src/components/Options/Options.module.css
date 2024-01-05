@@ -1,6 +1,14 @@
 .answers {
     padding: 2%;
-    font-size: 1.1em;
+    font-size: 1.1em ;
+    /* font-family: 'Commissioner', sans-serif; */
+    font-weight: 500 ;
+}
+
+@media  (max-width: 400px) {
+    .answers {
+		font-size: 1.1em;
+	}
 }
 
 ul.answers li {
