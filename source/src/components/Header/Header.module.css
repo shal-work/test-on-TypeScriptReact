@@ -41,6 +41,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -1.2em;
 }
 .mainIntro__logo > .logo {
     max-width: 128px;
@@ -51,8 +52,8 @@
     .mainIntro__logo > .logo {
 		width: calc(var(--index) * 8 );
 	}
-    
-} 
+
+}
 @media (max-width: 800px) and (min-aspect-ratio: 128/128) {
     .mainIntro__logo > .logo {
 		width: calc(var(--index) * 8 );
@@ -69,8 +70,8 @@
     .mainIntro__text {
 		font-size: calc(var(--index) * 1.2 );
 	}
-    
-} 
+
+}
 @media (max-width: 800px) and (min-aspect-ratio: 128/128) {
     .mainIntro__text {
 		font-size: calc(var(--index) * 1.2 );
@@ -80,7 +81,7 @@
     .mainIntro__text {
 		font-size: 12px;
 	}
-} 
+}
 @media (max-width: 400px) and (min-aspect-ratio: 300/128) {
     .mainIntro__text {
 		font-size: 12px;

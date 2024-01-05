@@ -15,18 +15,18 @@ type Props = {
     shuffleOptions: shuffleOptions,
     addAnswer: addAnswer
 }
-const App: React.FC<Props>  = (props) => {
+const App: React.FC<Props>  = (props1) => {
 
     return (
         <div className="appWrapper">
             <Header 
-                state={props.state} 
-                getGo={props.getGo} 
-                getQuantity={props.getQuantity}
-                circleElement={props.state.circleElement}
+                state={props1.state} 
+                getGo={props1.getGo} 
+                getQuantity={props1.getQuantity}
+                circleElement={props1.state.circleElement}
                 />
-            <Options state={props.state} versionAnswer={props.versionAnswer} getGo={props.getGo} shuffleOptions={props.shuffleOptions}/>
-            <Control state={props.state}  addAnswer={props.addAnswer} getGo={props.getGo}/>
+            <Options state={props1.state} versionAnswer={props1.versionAnswer} getGo={props1.getGo} shuffleOptions={props1.shuffleOptions}/>
+            <Control state={props1.state}  addAnswer={props1.addAnswer} getGo={props1.getGo}/>
         </div>
     );
 };

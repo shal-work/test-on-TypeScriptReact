@@ -6,10 +6,10 @@ import App from './App';
 import store, { StateType } from './redus/store';
 
 
-let renderEntireTree = (state: StateType, action: void ) => { 
+let renderEntireTree = (state1: StateType, action: void ) => { 
     ReactDOM.render(
         <App 
-            state={state} 
+            state={state1} 
             versionAnswer={store.versionAnswer.bind(store)} 
             addAnswer={store.addAnswer.bind(store)} 
             getGo={store.getGo.bind(store)} 

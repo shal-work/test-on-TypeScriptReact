@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400;500&display=swap');
+
 * {
+    font-family: 'Commissioner', sans-serif;
+    /* font-size: 18px; */
     padding: 0;
     margin: 0;
 }
@@ -6,7 +10,7 @@
 *, ::after, ::before {
     box-sizing: border-box;
 }
- 
+
 body {
 	margin: 0;
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -31,8 +35,8 @@ code {
 }
 
 .fadeOut {
-    -webkit-opacity: 0; 
-    opacity: 0; 
+    -webkit-opacity: 0;
+    opacity: 0;
     -webkit-transition: -webkit-opacity .75s ease-out;
     will-change: -webkit-opacity;
     transition: opacity .75s ease-out;
@@ -40,8 +44,8 @@ code {
 }
 
 .fadeIn {
-    -webkit-opacity: 1; 
-    opacity: 1; 
+    -webkit-opacity: 1;
+    opacity: 1;
     -webkit-transition: -webkit-opacity .75s ease-out;
     will-change: -webkit-opacity;
     transition: opacity .75s ease-out;
